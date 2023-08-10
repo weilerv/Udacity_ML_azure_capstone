@@ -45,6 +45,27 @@ Data was downloaded (as a zip file) in the current working directory onto my Azu
 ![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/82193c77-7f1f-4997-86e1-7a9f865f4fea)
 
 
+    "class_name": "XGBoostClassifier",
+    "module": "automl.client.core.common.model_wrappers",
+    "param_args": [],
+    "param_kwargs": {
+        "booster": "gbtree",
+        "colsample_bytree": 0.5,
+        "eta": 0.2,
+        "gamma": 0,
+        "max_depth": 7,
+        "max_leaves": 7,
+        "n_estimators": 25,
+        "objective": "reg:logistic",
+        "reg_alpha": 0,
+        "reg_lambda": 0.20833333333333334,
+        "subsample": 1,
+        "tree_method": "auto"
+    },
+    "prepared_kwargs": {},
+    "spec_class": "sklearn"
+}
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 ![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/5c476684-1642-45dd-9273-f160bf44f9dc)
 ![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/07d24c81-5d10-4bf2-844f-b32bf482f765)
