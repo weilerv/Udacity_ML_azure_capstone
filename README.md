@@ -75,11 +75,19 @@ Data was downloaded (as a zip file) in the current working directory onto my Azu
 
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+Since our task is a classification, logistic regression model was used since it's relatively not complex but efficient. 
+For hyperparameters the following inverse regulation strength and maximum number of iterations was used:
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/b8751370-98c3-4c1c-886f-8f751679fe8e)
+
+For early termination policy the Bandit policy was used:
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/48797ea9-99eb-4fd0-a5d3-e48f4daf4fda)
 
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+
+#### Improvement possibilities:
+We could run the experiment longer and with more parameter options or we could try other models.
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
