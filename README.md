@@ -99,10 +99,5 @@ The endpoint was tested using the rest api. Fpr sample data the first sample in 
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+See in github repository: 'Screencast_capstone.mp4'
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
