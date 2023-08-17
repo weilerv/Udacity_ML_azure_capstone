@@ -4,22 +4,15 @@ The project's goal was to train different models in Azure with AutoML and Hyperd
 
 
 ## Project Set Up and Installation
-Diabetes dataset from Kaggle was used through Kaggle API so extra code should be run from terminal to access data:
-
-pip install kaggle
-
-export KAGGLE_USERNAME="weilerv"
-export KAGGLE_KEY="d35c74c3259b8916fdb3ad6c9d7307c0"
-
-kaggle datasets download -d sudheerp2147234/salary-dataset-based-on-country-and-race
+Diabetes dataset from Kaggle was used and uploaded to blobstorage manually.
 
 ## Dataset
 
 ### Overview
-Diabetes dataset from (Kaggle)[https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset] was used for the project, 
+Diabetes dataset from [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset) was used for the project, 
 
 ### Task
-It is a binary classification problem deciding if somebody has cancer or not. 
+It is a binary classification problem deciding if somebody has diabetes or not. 
 Features:
 * gender
 * age
@@ -32,7 +25,7 @@ Features:
 
 
 ### Access
-Data was downloaded (as a zip file) in the current working directory onto my Azure workspace and extracted through code in my notebook
+Diabetes dataset from Kaggle was used and uploaded to blobstorage manually.
 ![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/58d4fa42-4c65-49d8-a754-981875f825f5)
 
 ## Automated ML
@@ -85,6 +78,13 @@ For early termination policy the Bandit policy was used:
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/4ee82993-0a6d-4648-94b6-e92b25a68293)
+The best model was achived with Regularization strength: 1, Max iteration: 500 and the accuracy that was achived: 0.96.
+
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/de86c4df-471b-482a-9955-90f2663271fb)
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/5e9f4c7a-5d4a-4f31-aaf9-4d567c7ae159)
+
+
 
 #### Improvement possibilities:
 We could run the experiment longer and with more parameter options or we could try other models.
@@ -93,6 +93,10 @@ We could run the experiment longer and with more parameter options or we could t
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+The endpoint was tested using the rest api. Fpr sample data the first sample in out dataset was converted to json format and tested for negative [0].
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/ac9ba9f3-5668-4adf-aa6e-a5f32b70cf87)
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/87b6eddb-6c41-4622-b45c-6177f981b524)
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
