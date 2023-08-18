@@ -30,6 +30,24 @@ Diabetes dataset from Kaggle was used and uploaded to blobstorage manually.
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+![image](https://github.com/weilerv/Udacity_ML_azure_capstone/assets/37341293/a0c686a8-442b-4b27-8f85-07a67b051776)
+
+AutoML settings:
+
+    experiment_timeout_minutes": 15,            Experiment takes maximum 15 minutes and gives the best model it found within this timeline
+    "max_concurrent_iterations": 5,          Maximum number of childruns run in the same time, advised to be same as nodes in the cluster   
+    "primary_metric" : 'accuracy'            It looks for the best model based on accuracy
+
+AutoML configuration:
+
+    compute_target=compute_target,             
+    task = "classification",                it is a classification since has to decide between diabetes and no diabetes  
+    training_data=dataset,                  giving the dataset we loaded before  
+    label_column_name="diabetes",           name of the column which should be predicted
+    enable_early_stopping= True,            if it doesnt find better models for awhile, it ends 
+    featurization= 'auto',
+    debug_log = "automl_errors.log",        where to save the debug logs
+    **automl_settings
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
